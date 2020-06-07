@@ -44,4 +44,15 @@ public class Customer implements Serializable {
     @ManyToOne(cascade = CascadeType.ALL)
     private Address address;
 
+    public Customer() {
+        // this is default constructor
+    }
+
+    public Customer(String firstName, String lastName, Integer mobile, String email, Address address) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.mobile = mobile;
+        this.email = email;
+        this.address = address;
+    }
 }

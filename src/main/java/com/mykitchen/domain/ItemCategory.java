@@ -27,4 +27,13 @@ public class ItemCategory {
 
     @Column(name = "item_type")
     private String itemType;
+
+    public ItemCategory() {
+        // this is default constructor
+    }
+
+    public ItemCategory(String categoryName, String itemType) {
+        this.categoryName = categoryName;
+        this.itemType = itemType;
+    }
 }

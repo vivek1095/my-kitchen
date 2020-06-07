@@ -41,4 +41,16 @@ public class Address implements Serializable {
 
     @Column(name = "zipcode")
     private int zipcode;
+
+    public Address() {
+        // this is default constructor
+    }
+
+    public Address(String addressLine, String city, String state, String country, int zipcode) {
+        this.addressLine = addressLine;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+        this.zipcode = zipcode;
+    }
 }

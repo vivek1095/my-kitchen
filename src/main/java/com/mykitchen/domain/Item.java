@@ -30,4 +30,13 @@ public class Item {
     @ManyToOne
     private ItemCategory itemCategory;
 
+    public Item() {
+        // this is default construcor
+    }
+
+    public Item(String itemName, float price, ItemCategory itemCategory) {
+        this.itemName = itemName;
+        this.price = price;
+        this.itemCategory = itemCategory;
+    }
 }
